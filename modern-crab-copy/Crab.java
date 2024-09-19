@@ -70,7 +70,7 @@ public class Crab extends Actor
      */
     public void trasitionToGameWonWorld()
     {
-        World gameWonWorld =  new  GameWonWorld();
+        World gameWonWorld =  new GameWonWorld();
         Greenfoot.setWorld(gameWonWorld);
         Greenfoot.playSound("scary-game-effect-131801.mp3");
     }

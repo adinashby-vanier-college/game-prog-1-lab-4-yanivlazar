@@ -61,7 +61,7 @@ public class Lobster extends Actor
         Actor worm = getOneIntersectingObject(Worm.class);
         World world = getWorld();
         if (worm != null) {
-            getWorld().addObject( new  Lobster(), getX(), getY());
+            getWorld().addObject( new Lobster(), getX(), getY());
         }
     }
 }
