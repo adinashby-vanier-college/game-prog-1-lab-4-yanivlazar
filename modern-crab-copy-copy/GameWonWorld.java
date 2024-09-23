@@ -6,16 +6,16 @@ import greenfoot.*;
 /**
  * 
  */
-public class GameOverWorld extends World
+public class GameWonWorld extends World
 {
 
     /**
-     * Constructor for objects of class GameOverWorld.
+     * Constructor for objects of class GameWonWorld.
      */
-    public GameOverWorld()
+    public GameWonWorld()
     {
-        super(569, 560, 1);
-        showText("you lose!", 260, 260);
+        super(560, 560, 1);
+        showText("you won the game!", 260, 260);
     }
 
     /**
@@ -29,6 +29,6 @@ public class GameOverWorld extends World
         bg.setFont(font);
         bg.setColor(Color.BLACK);
         bg.drawString(message, x, y);
-        showTextWithBigBlackFont("you lose ", 180, 200);
+        showTextWithBigBlackFont("you win", 180, 200);
     }
 }

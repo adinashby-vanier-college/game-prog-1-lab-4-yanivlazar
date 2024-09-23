@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class name="GameOverWorld" extends="World" extends-java="World" enable="true" strideversion="1">
+<class name="GameWonWorld" extends="World" extends-java="World" enable="true" strideversion="1">
     <javadoc xml:space="preserve"/>
     <imports>
         <import target="java.util.*" enable="true"/>
@@ -9,12 +9,12 @@
     <fields/>
     <constructors>
         <constructor access="public" enable="true">
-            <javadoc xml:space="preserve">Constructor for objects of class GameOverWorld.</javadoc>
+            <javadoc xml:space="preserve">Constructor for objects of class GameWonWorld.</javadoc>
             <params/>
             <throws/>
-            <delegate target="super" params="569,560,1" params-java="569, 560, 1"/>
+            <delegate target="super" params="560,560,1" params-java="560, 560, 1"/>
             <body>
-                <call expression="showText(&quot;you lose!&quot;,260,260)" expression-java="showText(&quot;you lose!&quot;, 260, 260)" enable="true"/>
+                <call expression="showText(&quot;you won the game!&quot;,260,260)" expression-java="showText(&quot;you won the game!&quot;, 260, 260)" enable="true"/>
             </body>
         </constructor>
     </constructors>
@@ -34,7 +34,7 @@ That is: create the initial objects and add them to the world.</javadoc>
                 <call expression="bg.setFont(font)" expression-java="bg.setFont(font)" enable="true"/>
                 <call expression="bg.setColor(Color.BLACK)" expression-java="bg.setColor(Color.BLACK)" enable="true"/>
                 <call expression="bg.drawString(message,x,y)" expression-java="bg.drawString(message, x, y)" enable="true"/>
-                <call expression="showTextWithBigBlackFont(&quot;you lose &quot;,180,200)" expression-java="showTextWithBigBlackFont(&quot;you lose &quot;, 180, 200)" enable="true"/>
+                <call expression="showTextWithBigBlackFont(&quot;you win&quot;,180,200)" expression-java="showTextWithBigBlackFont(&quot;you win&quot;, 180, 200)" enable="true"/>
             </body>
         </method>
     </methods>
